@@ -1,0 +1,81 @@
+html {
+    background-color: rgb(147, 185, 185);
+    padding: 10px;
+  }
+  
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.upper {
+    font-family: "IM Fell English SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.quint {
+    font-family: "Quintessential", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: "Quintessential", serif;
+    letter-spacing: 1;
+    line-height: 1.5;
+    font-size: 18px;
+}
+#bubble_wrapper {
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    top: 100px;
+    position: relative;
+
+}
+
+#bubble {
+    width: 200px;
+    height: 200px;
+    background-color: lightskyblue;
+    left: 50%;
+    top: 100px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#shine {
+    background-color: aliceblue;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    left: 0%;
+    top: 0%;
+    border-radius: 50%;
+
+}
+
+#shine_mask_below {
+    width: 100px;
+    height: 100px;
+    background-color: lightskyblue;
+    border: solid;
+    left: 30%;
+    top: 20%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+#shine_mask_left {
+    width: 100px;
+    height: 100px;
+    background-color: lightskyblue;
+    border:solid;
+    left: 25%;
+    top: -20%;
+    position: absolute;
+    border-radius: 50%;
+}
+  
