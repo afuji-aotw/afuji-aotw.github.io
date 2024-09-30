@@ -26,56 +26,64 @@ p {
     line-height: 1.5;
     font-size: 18px;
 }
-#bubble_wrapper {
-    width: 200px;
-    height: 200px;
+#bubble-position {
+    width: 210px;
+    height: 210px;
     left: 50%;
-    top: 100px;
-    position: relative;
+    margin: auto;
+
 
 }
 
 #bubble {
-    width: 200px;
-    height: 200px;
-    background-color: lightskyblue;
-    left: 50%;
-    top: 100px;
-    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    float: left;
     border-radius: 50%;
     overflow: hidden;
+    margin: 100px;
+    top: 100px;
+    -webkit-transition: width 3s, height 3s, margin 3s;
+    transition: width 3s, height 3s, margin 3s;
 }
 
-#shine {
-    background-color: aliceblue;
-    width: 70px;
-    height: 70px;
+#bubble:active {
+    width: 100px;
+    height: 100px;
+    margin: 55px;
+    background-color: rgb(53, 164, 234); /*todo add glow*/
+}
+
+.centered {
+    text-align: center;
+}
+
+.standard-spells {
+    gap: 10px 0px;
     position: relative;
-    left: 0%;
-    top: 0%;
-    border-radius: 50%;
-
+    top: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    width: 75%;
+    margin: auto;
 }
 
-#shine_mask_below {
-    width: 100px;
-    height: 100px;
-    background-color: lightskyblue;
-    border: solid;
-    left: 30%;
-    top: 20%;
-    position: absolute;
-    border-radius: 50%;
+.spell {
+    background-color: aqua;
+    width: 20vw;
+    height: 30vw;
+    margin: auto;
 }
 
-#shine_mask_left {
-    width: 100px;
-    height: 100px;
-    background-color: lightskyblue;
-    border:solid;
-    left: 25%;
-    top: -20%;
-    position: absolute;
-    border-radius: 50%;
+.ani-wrapper {
+    background-color: aquamarine;
+    width: 20vw;
+    height: 20vw;
 }
-  
+
+
+#spacing {
+    height: 4vw;
+}

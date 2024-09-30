@@ -1,0 +1,9 @@
+time spent on stuff:
+- 1 class period to add text for index.html and attempt bubble
+- 40 min: give up on bubble having multiple html elements, focused on centering it and expanding it well
+    - coloring
+    - link on expansion: https://jsfiddle.net/xcWge/14/
+    - concluding text
+    - first anchor element
+
+- 12:37 - 
