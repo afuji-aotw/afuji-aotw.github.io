@@ -221,18 +221,17 @@ p {
 @keyframes unconceal {
     0% {filter: drop-shadow(0 .5vw .3vw #4e5e61);
         filter: drop-shadow(0px 0px .9vw #a6d0d9);}
-    49% {
+    24% {
         filter: drop-shadow(0 .5vw .3vw #4e5e61);
         filter: drop-shadow(0px 0px .9vw #a6d0d9);
     }
-    50% {filter: drop-shadow(0px 0px 0.9vw #25a7be);}
+    25% {filter: drop-shadow(0px 0px 0.9vw #25a7be);}
     100% {filter: drop-shadow(0px 0px 0.9vw #25a7be);}
 
 }
 #c3:active {
     animation-name: unconceal;
     animation-duration: 5s;
-    animation-delay: 1s;
 }
 
 #c2 {
