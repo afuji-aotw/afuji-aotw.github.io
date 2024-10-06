@@ -237,7 +237,7 @@ p {
     100% {opacity: 0;}
 }
 
-.teacup img:hover {
+.teacup img:active {
     animation-name: fade;
     animation-duration: 4s;
     animation-iteration-count: infinite;
