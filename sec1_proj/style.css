@@ -320,3 +320,11 @@ p {
     animation-name: repair;
     animation-duration: 3s;
 }
+
+#mask {
+    width: 7vh;
+}
+#alienstage {
+    width: 7vh;
+    margin-bottom: 1vh;
+}
