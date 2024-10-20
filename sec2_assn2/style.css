@@ -1,0 +1,264 @@
+html {
+  background-color: rgb(6, 75, 145);
+}
+#title {
+  width: 100vw;
+  height: 30vw;
+  background-size: 70% auto;
+  background-image: url(img/prsk-min.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#people {
+  display: flex;
+  position: relative;
+  flex-flow: row wrap;
+  float: left;
+  width: 78vw;
+  height: auto;
+  left: 10vw;
+  justify-content: center;
+  align-content: center;
+}
+
+.person {
+  background-size: 100% auto;
+  width: 20vw;
+  height: 30vw;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.lightstick {
+  height: 10vw;
+}
+
+.lightstick-wrapper {
+  transform: rotate(45deg);
+  width: 10vw;
+  height: 10vw;
+  left: 5vw;
+  position: relative;
+
+}
+.lightstick-blade {
+  width: .8vw;
+  height: 3.5vw;
+  left: .2vw;
+  position: relative;
+  border-top-left-radius: 10% 5%;
+  border-top-right-radius: 10% 5%;
+}
+
+.kanade-blade {
+  background-color: rgb(134, 79, 113);
+}
+.an-blade {
+  background-color: rgb(72, 212, 234);
+  height: 4vw;
+}
+.shiho-blade {
+  background-color: rgb(142, 234, 72);
+}
+
+.lightstick-screw {
+  background-color: rgb(176, 176, 176);
+  width: 1.2vw;
+  height: .8vw;
+  position:relative;
+
+}
+.lightstick-handle {
+  background-color: rgb(231, 231, 231);
+  width: 1.2vw;
+  height: 3vw;
+}
+.mask-left {
+  background-color: rgb(6, 75, 145);
+  width: 1vw;
+  height: 4vw;
+  position: relative;
+  border-radius: 50%;
+  top: -36%;
+  left: -9%;
+}
+.mask-right {
+  background-color: rgb(6, 75, 145);
+  width: 1vw;
+  height: 4vw;
+  position: relative;
+  border-radius: 50%;
+  top: -75.5%;
+  left: 11%;
+}
+#kanade-left-stick {
+  transform: rotate(-55deg);
+  top: 0vw;
+  left: 6vw;
+  z-index: 1;
+}
+#kanade-right-stick {
+  transform: rotate(-40deg);
+  top: -12vw;
+  left: 8vw;
+}
+#an-left-stick {
+  transform: rotate(-40deg);
+  top: -2vw;
+  left: 10vw;
+  z-index: 2;
+}
+#an-right-stick {
+  transform: rotate(40deg);
+  top: -6.3vw;
+  left: 6vw;
+  z-index: 1;
+}
+#shiho-left-stick {
+  transform: rotate(55deg);
+  top: 7.2vw;
+  left: 9vw;
+  z-index: 1;
+}
+#shiho-right-stick {
+  transform: rotate(40deg);
+  top: -6.3vw;
+  left: 9vw;
+}
+
+
+#kanade-left-stick:hover > .kanade-blade{
+  background-color: rgb(183, 107, 182);
+    box-shadow: 0 0 5px 3px rgb(134, 79, 113);
+}
+#kanade-left-stick:hover ~ #kanade-right-stick > .kanade-blade{
+  background-color: rgb(183, 107, 182);
+    box-shadow: 0 0 5px 3px rgb(134, 79, 113);
+}
+#kanade-right-stick:hover > .kanade-blade{
+  background-color: rgb(183, 107, 182);
+    box-shadow: 0 0 5px 3px rgb(134, 79, 113);
+}
+#kanade-right-stick:hover ~ #kanade-left-stick > .kanade-blade{
+  background-color: rgb(183, 107, 182);
+    box-shadow: 0 0 5px 3px rgb(134, 79, 113);
+}
+
+#an-right-stick:hover > .an-blade{
+  background-color: rgb(91, 222, 255);
+    box-shadow: 0 0 5px 3px rgb(72, 212, 234);
+}
+#an-right-stick:hover ~ #an-left-stick > .an-blade{
+  background-color: rgb(91, 222, 255);
+    box-shadow: 0 0 5px 3px rgb(72, 212, 234);
+}
+#an-left-stick:hover > .an-blade{
+  background-color: rgb(91, 222, 255);
+    box-shadow: 0 0 5px 3px rgb(72, 212, 234);
+}
+#an-left-stick:hover ~ #an-right-stick > .an-blade{
+  background-color: rgb(91, 222, 255);
+    box-shadow: 0 0 5px 3px rgb(72, 212, 234);
+}
+
+
+
+#shiho-left-stick:hover > .shiho-blade{
+  background-color: rgb(203, 255, 113);
+    box-shadow: 0 0 5px 3px rgb(142, 234, 72);
+}
+#shiho-left-stick:hover ~ #shiho-right-stick > .shiho-blade{
+  background-color: rgb(203, 255, 113);
+    box-shadow: 0 0 5px 3px rgb(142, 234, 72);
+}
+#shiho-right-stick:hover > .shiho-blade{
+  background-color: rgb(203, 255, 113);
+    box-shadow: 0 0 5px 3px rgb(142, 234, 72);
+}
+#shiho-right-stick:hover ~ #shiho-left-stick > .shiho-blade{
+  background-color: rgb(203, 255, 113);
+    box-shadow: 0 0 5px 3px rgb(142, 234, 72);
+}
+
+/* .cover {
+  width: 10vw;
+  height: 10vw;
+  background-color: rgb(134, 79, 113, 0.5);
+  position:relative;
+} */
+/* #kanade-cover {
+  position:relative;
+  left: 22vw;
+  top: 51vw;
+}
+#an-cover {
+  position:relative;
+  left: -10vw;
+  top: 10vw;
+  background-color: black;
+  z-index: 1;
+}
+#shiho-cover {
+  position:absolute;
+  left: 50vw;
+  top: 50vw;
+  background-color: blue;
+} */
+
+
+
+
+
+.link-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#miku {
+  background-image: url(img/miku.webp);
+}
+
+#miku-link {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#miku:target {
+  box-shadow: 0 0 80px 20px blue;
+}
+
+
+#an {
+  background-image: url(img/an-shadow.png);
+}
+#an:hover {
+  background-image: url(img/an-glow.png);
+}
+#an:active {
+  background-image: url(img/an.webp);
+}
+
+#kanade {
+  background-image: url(img/kanade-shadow.png);
+}
+#kanade:hover {
+  background-image: url(img/kanade-glow.png);
+}
+#kanade:active {
+  background-image: url(img/kanade.webp);
+}
+
+#shiho {
+  background-image: url(img/shiho-shadow.png);
+}
+#shiho:hover {
+  background-image: url(img/shiho-glow.png);
+}
+#shiho:active {
+  background-image: url(img/shiho.webp);
+}
