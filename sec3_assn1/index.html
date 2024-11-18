@@ -1,0 +1,110 @@
+<head>
+
+</head>
+
+<body>
+  <h1 id="you-find-yourself">You find yourself</h1>
+  <h4>key:</h4>
+<p>C = Console</p>
+<p>U = User</p>
+<h2 id="intro-">Intro:</h2>
+<p>C: You find yourself interacting with a computer.  Except, not really.  You&#39;re in a room.  Or a box.  Or a space.  Or wherever you are told you are.  Choose to act (or not to act).  If you need help, type &quot;help&quot; and we&#39;ll do our best.</p>
+<p>C: You find yourself in a room.</p>
+<h2 id="universal-interactions-stateless-">Universal Interactions (stateless):</h2>
+<p><strong>1. Asking for help:</strong></p>
+<ul>
+<li>U: help</li>
+<li>C: Tell me what you are doing.  If you want to explore, you can &quot;look,&quot; or &quot;look around.&quot;  You can &quot;examine&quot; or &quot;pick up&quot; an item.  I&#39;ll be the one deciding if you are allowed to do it, though.</li>
+</ul>
+<p><strong>2. invalid input handling</strong></p>
+<ul>
+<li>U: <em>invalid prompt</em></li>
+<li>C: You&#39;re unable to do that. <em>repeat most recent prompt</em></li>
+</ul>
+<p><strong>3. whoami</strong></p>
+<ul>
+<li>U: who am i?</li>
+<li>C: You must find yourself.</li>
+</ul>
+<p><strong>4. whoareyou</strong></p>
+<ul>
+<li>U: who are you?</li>
+<li>C: That&#39;s not important.</li>
+</ul>
+<p><strong>5. reset</strong></p>
+<ul>
+<li>U: reset/restart/start over</li>
+<li>C: you find yourself in a room. <em>reset all states</em></li>
+</ul>
+<p><strong>6. undo</strong></p>
+<ul>
+<li>U: undo/undo action/ go back</li>
+<li>C: there is no time travelling allowed in this dimension</li>
+</ul>
+<p><strong>7. quit</strong></p>
+<ul>
+<li>U: exit/quit/end/leave</li>
+<li>C: class hasn&#39;t ended yet.</li>
+</ul>
+<h2 id="procedure">procedure</h2>
+<p>C: You find yourself in a room</p>
+<p>U: look/look around</p>
+<p>C: You look around the room.  Ahead of you there is a large TV monitor.  To the left there is a row of computers on a long table against the wall.  To the right is another row of computers against the wall, but there is also a box on the floor.  For every desktop there is a chair for you to sit in front of that computer.  The door is also to your right.</p>
+<p>U: examine/look at computer/box/door/tv</p>
+<p>C: That computer/box/door/tv is too far away.  Why don&#39;t you go over there?</p>
+<p>U: go to computer/box/door/tv</p>
+<p>C: how would you go to the computer/box/door/tv if you&#39;re sitting down in the chair you find yourself at right now?</p>
+<p>U: stand up</p>
+<p>C: you stand up.  How silly you looked trying to walk while seated.</p>
+<p>U: go to computer/box/door/tv</p>
+<p>C: you find yourself in front of the computer/box/door/tv.</p>
+<p>U: examine/look at computer/box/door/tv</p>
+<h3 id="computer">computer</h3>
+<p>C: you find yourself looking into the lit computer screen.  the desktop has no applications open except for the terminal.  you find that the cursor is blinking on the terminal, indicating it&#39;s ready for you to type something in.</p>
+<p>U: start/begin/<em>command to run this program</em></p>
+<p>C: <em>start new instance of program or restart program.  depends on how much i want to deal with recursion</em></p>
+<h3 id="box">box</h3>
+<p>C: you find that the box is cardboard, roughly square-ish and 3 feet in length, width, and height.  it&#39;s sealed in packing tape, but there are some tiny holes poked into one of the sides.</p>
+<p>U: listen to the box</p>
+<p>C: you hear...</p>
+<p>...</p>
+<p>meowing?  you aren&#39;t sure though</p>
+<p>U: touch the box</p>
+<p>C: it&#39;s cardboard.  at least it isn&#39;t wet cardboard.</p>
+<p>U: look into the box</p>
+<p>C: you find yourself pressing your eye to the tiny holes.  As you do so, your vision goes dark.</p>
+<p>C: <em>wait 2 seconds, take no input</em> at first, you think it&#39;s because there&#39;s no light in the box.  but then you draw your face away from the box&#39;s surface and find that it&#39;s still dark.  There&#39;s a small glow to your left though.  Your whiskers twitch nervously.</p>
+<p>C: you find yourself in the box.</p>
+<p>U: look</p>
+<p>C: you cannot see anything apart from the glow.  but do you hear anything?</p>
+<p>U: listen</p>
+<p>C: you swivel your ears.  no sound.</p>
+<p>U: look at the glow</p>
+<p>C: the glow comes from many tiny holes.  Thank goodness the person who put the box here decided to add airholes for any creature who found themselves stuck in a box.</p>
+<p>U: <em>add any other command/comment, toggle override</em></p>
+<p>C: <em>with 1/2 chance</em> you find yourself in the box.</p>
+<p>C: <em>with 1/2 chance</em> you find yourself getting antsy and start pacing.  You bump into something hard and cold.</p>
+<p>U: examine/look/touch/smell/listen/taste/sense/explore <em>untoggle override</em></p>
+<p>C: while exploring the unfamiliar object, you nudge it just enough so that it falls over.  you hear a sharp tinkling sound like a small glass flask breaking, and you smell something bitter.  Its nauseating, and you lie down in what feels like a cold puddle.  You don&#39;t get up. <em>exit program</em></p>
+<h3 id="door">door</h3>
+<p>C: you look at the door.  It looks sturdy.</p>
+<p>U: open door</p>
+<p>C: the handle doesn&#39;t turn. strange.  there&#39;s a number lock above the handle.  maybe putting in the right combination would work?</p>
+<p>U: 4253</p>
+<p>C: nice, greyory did not lie when they said that 4253 is the password to this room.  the lock clicks, and you are able to turn the handle.</p>
+<p>U: open door</p>
+<p>C: you open the door.  maybe you wish to just step out for a quick break.  i&#39;ll let you do that once this simulation ends.</p>
+<h3 id="tv">tv</h3>
+<p>C: you find yourself looking at the tv screen.  it&#39;s off.</p>
+<p>U: turn/power on the tv</p>
+<p>C: there&#39;s a button on the side of the monitor, and you press it.  the screen lights up.  it&#39;s showing this exact conversation.  what a funny little mirror.</p>
+<p>U: look at myself/the tv <em>state of tv being on or off matters here</em></p>
+<p>C: it&#39;s us!</p>
+<p>U: turn/power off the tv</p>
+<p>C: well, that&#39;s no fun.  i&#39;m still here, at least.  and you find yourself looking into your own reflection shown in the dark screen of the monitor.</p>
+<p>U: look at myself/the tv <em>state of tv being on or off matters here</em></p>
+<p>C: it&#39;s you :)</p>
+
+  
+
+</body>
