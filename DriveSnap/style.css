@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap');
+
+body {
+  margin: 0;
+}
+.section{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#sec1 {
+  background-color: #8fcab9;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+#sec2 {
+  background-color: #9EE4CF;
+}
+
+#sec3 {
+  background-color: #54DCB7;
+ }
+
+#sec4{
+  background-color: #ADEAD6;
+}
+
+#sec5{
+  background-color: #6ee6ce;
+  display: flex;
+  flex-direction: column;
+}
+ 
+ #Title {
+   font-family:"Roboto";
+   font-weight: bold;
+   color: white;
+   font-size:4vw;
+   top: 80px;
+   position: absolute;
+   margin-left: 35px;
+ }
+
+ #Container {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; /* Center the squares horizontally */
+  gap: 20px; /* Add space between squares */
+  height: 100vh; /* Make the container full height of the viewport */
+  width:30vw;
+  justify-content:center; /* Center the squares vertically within the container */
+ /*background-color: red;*/ 
+  padding:5px;
+  position:absolute;
+  right: 5vw;
+}
+
+#SharingBox1{
+  width: 23vw; 
+  height: 18vw; 
+  max-width: 590px;
+  max-height:395px;
+  border-radius: 25%;
+  background-color: #5D8DF4;
+  justify-content: center; /* Horizontally center the text */
+  align-content: center;    /* Vertically center the text */
+  font-size: 1.3vw;              /* Font size based on viewport width */
+  text-align: center; 
+  padding: 7px;
+  font-family:"Klee One";
+  color: white;
+}
+
+#SharingBox2{
+  width: 23vw; 
+  height: 10vw; 
+  max-width: 590px;
+  max-height:220px;
+  border-radius: 25%;
+  background-color: #5D8DF4;
+  justify-content: center; /* Horizontally center the text */
+  align-content: center;    /* Vertically center the text */
+  font-size: 1.3vw;              /* Font size based on viewport width */
+  text-align: center; 
+  padding: 7px;
+  font-family:"Klee One";
+  color: white;
+}
+#Container2 {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; /* Center the squares horizontally */
+  gap: 20px; /* Add space between squares */
+  height: auto; /* Make the container full height of the viewport */
+  width:47vw;
+  justify-content:center; /* Center the squares vertically within the container */
+  /*background-color: red*/ 
+  padding:2vh;
+  position:absolute;
+  left: 5vw;
+  top: 24vh;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: center;
+  position: relative;
+  margin-top: 1vw;
+}
+
+.imagerow {
+  display: flex;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  position: relative;
+  object-fit: contain;
+  justify-content: space-around;
+}
+
+.imagerow img {
+  max-width: 20%;
+}
+
+.imagerow p {
+  margin-top: 5vh;
+  max-width: 25%;
+  text-align: center;
+}
+
+.imagelabel {
+  color: black;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: clamp(0.5rem, 1.2rem, 2rem);
+  text-align: center;
+}
+
+.heading {
+  padding-left: 5vw;
+  object-fit: contain;
+}
+
+.bottom {
+  display: flex;
+  color: white;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: clamp(1rem, 1.5rem, 2rem);
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-top: 1vw;
+}
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+  position: relative;
+  margin-left: 5vw;
+  top: 0vw;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 10vw;
+	height: 4.5vw;
+	background: grey;
+	display: block;
+	border-radius: 4.5vw;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 0.7vw;
+	left: 0.5vw;
+	width: 3vw;
+	height: 3vw;
+	background: #fff;
+	border-radius: 4.5vw;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #efd2e0;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 9vw;
+}
+
+@media screen and (min-width: 900px) {
+  label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 10vw;
+    height: 4.5vw;
+    top: -1vw;
+    background: grey;
+    display: block;
+    border-radius: 4.5vw;
+    position: relative;
+  }
+}
+
+#Bubble1{
+  width: 29vw; 
+  height: 17vw; 
+  border-radius: 25%;
+  background-color: #F8C5C5;
+  justify-content: center; /* Horizontally center the text */
+  align-content: center;    /* Vertically center the text */
+  font-size: 1.35vw;              /* Font size based on viewport width */
+  text-align: center; 
+  padding: 7px;
+  font-family:"Klee One";
+  color: white;
+}
+#Bubble2{
+  width: 29vw; 
+  height: 15vw; 
+  border-radius: 25%;
+  background-color: #F8C5C5;
+  justify-content: center; /* Horizontally center the text */
+  align-content: center;    /* Vertically center the text */
+  font-size: 2.5vw;              /* Font size based on viewport width */
+  text-align: center; 
+  padding: 7px;
+  font-family:"Roboto";
+   font-weight: bold;
+  color: white;
+}
+
+
+
+#moreicloudneeded{
+  width: 32vw;
+  border-radius: 15%;
+  position: absolute;
+  margin-left: 10vw;
+  top: 25vh;
+}
+
+
+#sec4_1{
+    width: 29vw; 
+    height: 20vh; 
+    border-radius: 25%;
+    background-color: #2596be;
+    justify-content: center; /* Horizontally center the text */
+    align-content: center;    /* Vertically center the text */
+    font-size: 1.35vw;              /* Font size based on viewport width */
+    text-align: center; 
+    padding: 7px;
+    font-family:"Klee One";
+    color: white;
+  }
+#sec4_2{
+    width: 29vw; 
+    height: 20vh; 
+    border-radius: 25%;
+    background-color: #2596be;
+    justify-content: center; /* Horizontally center the text */
+    align-content: center;    /* Vertically center the text */
+    font-size: 2vw;              /* Font size based on viewport width */
+    text-align: center; 
+    padding: 7px;
+    font-family:"Klee One";
+     font-weight: bold;
+    color: white;
+  }
+
+#tagline {
+  font-family:"Roboto";
+  color: #01737d;
+  font-weight: bold;
+  font-size:3vw;
+  top: 80vh;
+  position: relative;
+  margin-left: 30vw;
+}
+
+#Container1 {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; /* Center the squares horizontally */
+  gap: 20px; /* Add space between squares */
+  height: 100vh; /* Make the container full height of the viewport */
+  width:30vw;
+  justify-content:center; /* Center the squares vertically within the container */
+ /*background-color: red;*/ 
+  padding:5px;
+  position:absolute;
+  right: 5vw;
+}
+
+#divider_1_2 {
+  height: 20vh;
+  width: 100vw;
+  background-image: linear-gradient(#8fcab9, #9EE4CF);
+}
+#divider_2_3 {
+  height: 20vh;
+  width: 100vw;
+  background-image: linear-gradient(#9EE4CF, #54DCB7);
+}
+
+#divider_3_4 {
+  height: 20vh;
+  width: 100vw;
+  background-image: linear-gradient(#54DCB7, #ADEAD6);
+}
+
+#divider_4_5 {
+  height: 20vh;
+  width: 100vw;
+  background-image: linear-gradient(#ADEAD6, #6ee6ce);
+}
+
+#sec1_img {
+  width: 70vw;
+  height: auto;
+  position:relative;
+}
+
+#sec1_center {
+  width: 90vw;
+  height: auto;
+  background-image: url("./img/sec1.png");
+
+}
