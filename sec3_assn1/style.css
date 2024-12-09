@@ -1,22 +1,139 @@
-/* html {
-  background-color: rgb(6, 75, 145);
+html {
+  background-color: rgb(53, 109, 192);
 }
-body {
+/* body {
   margin: 0;
 } */
 p {
   font-family: "Courier Prime", monospace;
   font-weight: 400;
   font-style: normal;
-  font-size: 12px;
+  font-size: 1vw;
 }
-.electrolize-regular {
-  font-family: "Electrolize", sans-serif;
+.e {
+  /* font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  font-style: normal; */
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  letter-spacing: -1px;
 }
-.courier-prime-regular {
+.c {
   font-family: "Courier Prime", monospace;
   font-weight: 400;
   font-style: normal;
+  font-size: 1vw;
+}
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 700 */
+
+.u {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.window {
+  border-width: .5vw;
+  border-top:1.5vw;
+  border-color: rgb(16, 33, 182);
+  border-style: solid;
+  border-radius: 0.3vw;
+  box-shadow: .1vw .1vw 1vw .1vw rgb(40, 41, 43);
+}
+#key_window {
+  margin-left: 5vw;
+  padding-left: 2vw;
+  width: 20vw;
+  height: 20vh;
+  background-color: rgb(218, 239, 246);
+}
+
+#key {
+  margin-top: 0px;
+  margin-bottom: 1vw;
+  text-decoration: underline;
+}
+
+.x_button {
+  margin:0px;
+  padding:0;
+  background-color: red;
+  width: 2vw;
+  height: 1.2vw;
+  position: relative;
+}
+
+#key_x {
+  top: -1.3vw;
+  left: 18vw;
+}
+
+.x_button:hover {
+  cursor: pointer;
+}
+
+.x_button:active{
+  cursor: pointer;
+  background-color: rgb(184, 9, 9);
+  color: rgb(226, 206, 206);
+}
+
+.x {
+  margin-left:.7vw;
+  top: 0vw;
+  width: 10%;
+  height: 1vw;
+  margin-top: 0;
+  position: relative;
+  top: -.4vw;
+  font-family: sans-serif, Courier, monospace;
+  font-weight: 500;
+  font-size: 1.4vw;
+  color:rgb(255, 244, 244);
+  position: relative;
+ }
+
+ #terminal {
+  position: relative;
+  width: 50vw;
+  height: 30vw;
+  background-color: black;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  left: 20vw;
+  top: -5vw;
+  color:white;
+  border-color: rgb(204, 218, 238);
+  border-style:solid;
+  border-width: 1.5vw;
+  border-left: 0;
+  border-bottom: 0;
+  border-right: 0;
+  padding-top: 0vw;
+ }
+
+ #terminal_x{
+  top: -1.3vw;
+  left: 48.5vw;
+  z-index: 2;
+  background-color: grey;
+
+ }
+
+ #terminal_x:active {
+  background-color: rgb(91, 89, 100);
+ }
+
+#terminal_inside {
+  overflow: scroll;
+  background-color: black;
+  width: 50vw;
+  height: 30vw;
+  margin-top: 0vw;
+  top:-1vw;
+  position: relative;
 }
