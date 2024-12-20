@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+  overflow: scroll;
+  color: rgb(9, 9, 121);
+}
+a {
+  color:rgb(7, 7, 153);
+}
+#background-wrapper {
+  position: relative;
+  overflow: scroll;
+  width: 100vw;
+  height: 100vh;
+}
+
+#background {
+  position: relative;
+  background-position: center;
+  background-image: url("./img/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%, 100%;
+  width: 100vw;
+  height: 78vw;
+  overflow: hidden;
+}
+
+#s3fp {
+  width: 25vw;
+  height: 25vw;
+  background-image: url("./img/s3fp.png");
+  left: 7vw;
+  top: 9vw;
+}
+
+#s3fp:hover {
+  background-image: url("./img/s3fp_glow.png");
+}
+
+@keyframes bounce {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 2vw); }
+  to   { transform: translate(0, -0px); }  
+}
+
+.book {
+  background-size: 100%;
+  position:absolute;
+  transition: all 2s ease;
+  /* background-color: black; */
+}
+
+.book:hover {
+  animation: bounce 2.5s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+
+#s3a2 {
+  width: 20vw;
+  height: 20vw;
+  background-image: url("./img/s3a2.png");
+  left: 20vw;
+  top: 43vw;
+}
+
+#s3a2:hover {
+  background-image: url("./img/s3a2_glow.png");
+  
+}
+
+#s3a1 {
+  width: 25vw;
+  height: 25vw;
+  background-image: url("./img/s3a1.png");
+  left: 38vw;
+  top: 54vw;
+}
+
+#s3a1:hover {
+  background-image: url("./img/s3a1_glow.png");
+}
+
+#s2fp {
+  width: 20vw;
+  height: 20vw;
+  background-image: url("./img/s2fp.png");
+  left: 67vw;
+  top: 47vw;
+}
+
+#s2fp:hover {
+  background-image: url("./img/s2fp_glow.png");
+}
+
+#s2a2 {
+  width: 20vw;
+  height: 20vw;
+  background-image: url("./img/s2a2.png");
+  left: 79vw;
+  top: 22vw;
+}
+
+#s2a2:hover {
+  background-image: url("./img/s2a2_glow.png");
+}
+
+#s1fp {
+  width: 18vw;
+  height: 18vw;
+  background-image: url("./img/s1fp.png");
+  left: 58vw;
+  top: 8vw;
+}
+
+#s1fp:hover {
+  background-image: url("./img/s1fp_glow.png");
+}
+
+#s1a2 {
+  width: 15vw;
+  height: 15vw;
+  background-image: url("./img/s1a2.png");
+  left: 44vw;
+  top: 18vw;
+}
+
+#s1a2:hover {
+  background-image: url("./img/s1a2_glow.png");
+}
+
+#s1a1 {
+  width: 15vw;
+  height: 15vw;
+  background-image: url("./img/s1a1.png");
+  left: 46vw;
+  top: 31vw;
+}
+
+#s1a1:hover {
+  background-image: url("./img/s1a1_glow.png");
+}
+
+#chair {
+  width: 20vw;
+  height: 35vw;
+  background-image: url("./img/me.png");
+  background-position: center;
+  background-size: 35vw;
+  position:absolute;
+  transition: all 2s ease;
+  overflow: hidden;
+  left: 55vw;
+  top: 25vw;
+  transform-origin: bottom center;
+}
+
+#chair:hover {
+  animation: rock 3s ease-in-out;
+  animation-iteration-count: infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes rock {
+  from {
+    transform: rotate(0);
+  }
+  35% {
+    transform: rotate(7deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+#readings_wrapper {
+  /* background-color: black; */
+  padding: 4vw;
+  margin: -4vw;
+  width: 12vw;
+  height: 12vw;
+  background-image: url("./img/all_three.png");
+  left: 74vw;
+  top: 21vw;
+  background-size: 20vw 20vw;
+  background-position: center;
+  overflow: visible;
+}
+
+
+.mrs-saint-delafield-regular {
+  font-family: "Mrs Saint Delafield", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+
+.tangerine-regular {
+  font-family: "Tangerine", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.tangerine-bold {
+  font-family: "Tangerine", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+#reading_responses {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+.week {
+  background-color: rgb(244, 237, 231);
+  width: 25vw;
+  height: 40vw;
+  margin: 2vw;
+  padding: 2vw;
+  overflow: scroll;
+}
+
+.title {
+  margin-bottom: -20px;
+  font-size: 20px;
+}
+
+#assignment_title {
+  margin: 1vw;
+}
+
+#assignment_description {
+  margin-left: 7vw;
+}
+
+#nav:hover {
+  transform: rotate(30deg);
+}
